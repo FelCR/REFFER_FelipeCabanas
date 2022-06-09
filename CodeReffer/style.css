@@ -1,0 +1,338 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#productos div,
+#servicios div {
+    border: solid 1px;
+    padding: 5px;
+    background-color: bisque;
+}
+
+.header__logo {
+    font-family: 'Smooch', cursive;
+    font-size: 50px;
+    margin-top: -10px;
+    margin-left: 20px;
+}
+
+#grid{
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: 100px auto 50px;
+    column-gap: 0;
+    row-gap: 0;
+    grid-template-areas: 
+                        "header header header"
+                        "nav contenido aside"
+                        "nav footer aside";
+}
+
+#inputHeader {
+    display: block;
+    position: absolute;
+    left: 1000px;
+    top: 40px;
+    height: 30px;
+}
+
+header {
+    grid-area: header;
+    background-color: rgb(114, 2, 114);
+    color: white;
+    padding-top: 30px;
+    padding-right: 40px;
+    position: fixed;
+    height: 70px;
+    width: 1320px;
+}
+
+#botonPerfil{
+    position: absolute;
+    left: 1200px;
+    top: 30px;
+    color: grey;   
+    
+}
+
+ul ul {
+    position: absolute;
+    display: none;
+    text-decoration: none;
+ }
+ ul ul li {
+    display: block;
+    text-decoration: none;
+ }
+ ul li:hover ul {
+    display:block;
+    text-decoration: none;
+    position: relative;
+    margin-top: 30px;
+    font-size: 20px;
+ }
+
+
+/*.encabezado {
+    position: fixed;
+    top:0;
+}*/
+
+#contenido {
+    grid-area: contenido;
+    height: auto;
+    background-color: rgb(232, 232, 232);
+    
+}
+
+#recomendado {
+    height: 350px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    
+}
+
+.tituloSeccion {
+    margin-bottom: 320px;
+    position: relative;
+    color:grey;
+
+}
+
+.atributosArt {
+    height: 280px;
+    width: 220px;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    padding-top: 20px;
+
+}
+
+#publicaciones {
+    height: 360px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.atributosPub {
+    height: 320px;
+    width: 460px;
+    background-color: white;
+    border-radius: 5px;
+
+}
+
+#cercaDe {
+    height: 350px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+#nav {
+    grid-area: nav;
+    padding-left: 40px;
+    padding-top: 30px;
+    font-family: arial;
+    color: grey;
+    background-color: rgb(218, 216, 216);
+    text-decoration: none;
+    position: fixed;
+    margin-top: 100px;
+    height: 1000px;
+    width: 162px;
+    
+}
+
+aside {
+    grid-area: aside;
+    
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
+    padding-top: 40px;
+}
+
+#productos, #servicios{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    column-gap: 10px;
+    row-gap: 10px;
+    /*justify-items: stretch;
+    align-items: center;*/
+    justify-content: stretch;
+    align-content: start;
+
+}
+
+.item{
+    background-color: aquamarine !important;
+    justify-self: stretch;
+    align-self: center;
+}
+
+/* --------------------------------------- NEGOCIO--------------------------------------------*/
+
+#gridNegocios{
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: 100px auto  auto 50px;
+    column-gap: 0;
+    row-gap: 0;
+    grid-template-areas: 
+                        "header header header"
+                        "nav contenido aside"
+                        /*"nav publicaciones aside"
+                        "nav cercaDe aside"*/
+                        "nav contenido aside"
+                        "nav footer aside";
+}
+
+#caratula {
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+    justify-content:center;
+    
+}
+
+.portada {
+    height: 300px;
+    width: 920px;
+    align-items: flex-end;
+    background-color: white;
+}
+
+#estante {
+    height: 350px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+.tituloSeccion {
+    margin-bottom: 310px;
+    position: absolute;
+    color:grey;
+
+}
+
+/*La seccion de publicaciones se define en el apartado anterior*/
+
+#refferds {
+    height: 350px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+.perfilReffer {
+    height: 280px;
+    width: 220px;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/*-----------------------------------------Articulo-------------------------------------------*/
+
+#gridNegocios{
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: 100px auto  auto 50px;
+    column-gap: 0;
+    row-gap: 0;
+    grid-template-areas: 
+                        "header header header"
+                        "nav contenido aside"
+                        /*"nav publicaciones aside"
+                        "nav cercaDe aside"*/
+                        "nav contenido aside"
+                        "nav footer aside";
+}
+
+#displayArticulo {
+    height: 570px;
+    display: flex;
+    align-items: flex-end;  
+    justify-content: space-evenly; 
+}
+
+.tituloSeccionArt {
+    margin-bottom: 520px;
+    position: absolute;
+    color:grey;
+}
+
+.fotosArticulo {
+    height: 500px;
+    width: 80px;
+    border-radius: 5px;
+    align-items: flex-end;
+    background-color: white;
+}
+
+.imagenArticulo {
+    height: 500px;
+    width: 480px;
+    border-radius: 5px;
+    align-items: flex-end;
+    background-color: white;
+}
+
+.descArticulo {
+    height: 500px;
+    width: 350px;
+    border-radius: 5px;
+    align-items: flex-end;
+    background-color: white;
+}
+
+#descripcion {
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    background-color: white;
+    
+}
+.parrafoDesc {
+    text-align: justify;
+    position: relative;
+    margin-top: 50px;
+}
+
+#comentArt {
+    height: 350px;
+    width: 928px;
+    display: flex;
+    align-items: flex-end;
+    background-color: white;
+    border-radius: 10px;
+    justify-content: center;
+    margin-left: 8px;
+    margin-bottom: 10px;
+}
+
+.portadaHeader {
+    background-color: rgb(114, 2, 114);
+    height: 200px;
+}
+
+.banner {
+    margin-top: 138px;
+}
+
+.logIn {
+    margin-top: 400px;
+    margin-left: 640px;
+}
